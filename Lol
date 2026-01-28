@@ -1097,7 +1097,7 @@ function AcrylicPaint()
 				},
 			}, {
 				New("UICorner", {
-					CornerRadius = UDim.new(0, 8),
+					CornerRadius = UDim.new(0, 24),
 				}),
 			}),
 
@@ -1107,7 +1107,7 @@ function AcrylicPaint()
 				ZIndex = 2,
 			}, {
 				New("UICorner", {
-					CornerRadius = UDim.new(0, 8),
+					CornerRadius = UDim.new(0, 24),
 				}),
 				New("UIStroke", {
 					Transparency = 0.5,
@@ -1684,7 +1684,7 @@ Components.Dialog = (function()
 			Parent = Dialog.Window.Root,
 		}, {
 			New("UICorner", {
-				CornerRadius = UDim.new(0, 8),
+				CornerRadius = UDim.new(0, 24),
 			}),
 		})
 
@@ -1756,7 +1756,7 @@ Components.Dialog = (function()
 			},
 		}, {
 			New("UICorner", {
-				CornerRadius = UDim.new(0, 8),
+				CornerRadius = UDim.new(0, 24),
 			}),
 			New("UIStroke", {
 				Transparency = 0.5,
