@@ -164,20 +164,13 @@ local function CloseOpen()
 	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	Close_ImageButton.Parent = ScreenGui
-	Close_ImageButton.Name = "OpenCloseButton"
 	Close_ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	Close_ImageButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
-	-- Make the button square so the UICorner can make it perfectly circular
-	Close_ImageButton.Size = UDim2.new(0, 48, 0, 48)
-	-- adjust the position if you want; this keeps an initial position similar to before
 	Close_ImageButton.Position = UDim2.new(0.1021, 0, 0.0743, 0)
-	-- Use whatever image you already had
+	Close_ImageButton.Size = UDim2.new(0, 48, 0, 48)
 	Close_ImageButton.Image = "rbxassetid://129069615357738"
 	Close_ImageButton.Visible = false
-	Close_ImageButton.BackgroundTransparency = 0.15 -- optional: small transparency to show underlying
-	Close_ImageButton.AutoButtonColor = true
 
-	-- make a full-circle corner radius (1 == 100% of smallest dimension)
 	UICorner.Name = "MainCorner"
 	UICorner.CornerRadius = UDim.new(1, 0)
 	UICorner.Parent = Close_ImageButton
