@@ -214,6 +214,8 @@ local function CloseOpen()
 	return Close_ImageButton
 end
 
+local Close_ImageButton = CloseOpen()
+
 local function isMotor(value)
 	local motorType = tostring(value):match("^Motor%((.+)%)$")
 
