@@ -33,45 +33,36 @@ end)
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or function(f) end
 
+-- REPLACE the existing Themes table with this block
 local Themes = {
     Names = {
-        "SpeedHubX"
+        "SpeedHubX",
+        "MidnightBlue",
     },
     SpeedHubX = {
         Name = "SpeedHubX",
-        -- use a red you like; here is a deep red
         Accent = Color3.fromRGB(220, 20, 60),
-
         AcrylicMain = Color3.fromRGB(20, 20, 20),
-        AcrylicBorder = Color3.fromRGB(40, 40, 40), 
+        AcrylicBorder = Color3.fromRGB(40, 40, 40),
         AcrylicGradient = ColorSequence.new(Color3.fromRGB(30, 30, 30), Color3.fromRGB(10, 10, 10)),
         AcrylicNoise = 0.8,
-
         TitleBarLine = Color3.fromRGB(90, 90, 90),
-        -- Tab color (tint) — use a redish tint
         Tab = Color3.fromRGB(170, 8, 8),
-
         Element = Color3.fromRGB(180, 0, 0),
         ElementBorder = Color3.fromRGB(50, 50, 50),
         InElementBorder = Color3.fromRGB(80, 80, 80),
         ElementTransparency = 0.75,
-
         ToggleSlider = Color3.fromRGB(200, 0, 0),
         ToggleToggled = Color3.fromRGB(255, 255, 255),
-
         SliderRail = Color3.fromRGB(160, 160, 160),
-
         DropdownFrame = Color3.fromRGB(30, 30, 30),
         DropdownHolder = Color3.fromRGB(50, 50, 50),
         DropdownBorder = Color3.fromRGB(180, 0, 0),
         DropdownOption = Color3.fromRGB(220, 0, 0),
-
         Keybind = Color3.fromRGB(160, 0, 0),
-
         Input = Color3.fromRGB(180, 180, 180),
         InputFocused = Color3.fromRGB(0, 0, 0),
         InputIndicator = Color3.fromRGB(255, 50, 50),
-
         Dialog = Color3.fromRGB(30, 30, 30),
         DialogHolder = Color3.fromRGB(45, 45, 45),
         DialogHolderLine = Color3.fromRGB(180, 0, 0),
@@ -80,14 +71,50 @@ local Themes = {
         DialogBorder = Color3.fromRGB(70, 70, 70),
         DialogInput = Color3.fromRGB(40, 40, 40),
         DialogInputLine = Color3.fromRGB(220, 0, 0),
-
         Text = Color3.fromRGB(255, 255, 255),
         SubText = Color3.fromRGB(170, 170, 170),
         Hover = Color3.fromRGB(220, 0, 0),
         HoverChange = 0.08,
-    }    
+    },
+    MidnightBlue = {
+        Name = "MidnightBlue",
+        -- neon cyan accent on dark navy background
+        Accent = Color3.fromRGB(0, 168, 255), -- neon cyan
+        AcrylicMain = Color3.fromRGB(10, 12, 25), -- very dark blue
+        AcrylicBorder = Color3.fromRGB(18, 28, 46),
+        AcrylicGradient = ColorSequence.new(Color3.fromRGB(15, 20, 40), Color3.fromRGB(5, 8, 20)),
+        AcrylicNoise = 0.85,
+        TitleBarLine = Color3.fromRGB(28, 60, 92),
+        Tab = Color3.fromRGB(6, 20, 40),
+        Element = Color3.fromRGB(12, 18, 40),
+        ElementBorder = Color3.fromRGB(30, 40, 60),
+        InElementBorder = Color3.fromRGB(40, 60, 90),
+        ElementTransparency = 0.80,
+        ToggleSlider = Color3.fromRGB(0, 168, 255),
+        ToggleToggled = Color3.fromRGB(255, 255, 255),
+        SliderRail = Color3.fromRGB(60, 80, 110),
+        DropdownFrame = Color3.fromRGB(8, 12, 25),
+        DropdownHolder = Color3.fromRGB(18, 28, 45),
+        DropdownBorder = Color3.fromRGB(0, 140, 220),
+        DropdownOption = Color3.fromRGB(0, 120, 200),
+        Keybind = Color3.fromRGB(10, 20, 40),
+        Input = Color3.fromRGB(220, 220, 230),
+        InputFocused = Color3.fromRGB(20, 30, 50),
+        InputIndicator = Color3.fromRGB(0, 200, 255),
+        Dialog = Color3.fromRGB(12, 18, 30),
+        DialogHolder = Color3.fromRGB(20, 26, 40),
+        DialogHolderLine = Color3.fromRGB(0, 140, 220),
+        DialogButton = Color3.fromRGB(10, 14, 25),
+        DialogButtonBorder = Color3.fromRGB(0, 120, 200),
+        DialogBorder = Color3.fromRGB(40, 60, 80),
+        DialogInput = Color3.fromRGB(18, 24, 36),
+        DialogInputLine = Color3.fromRGB(0, 160, 240),
+        Text = Color3.fromRGB(235, 245, 255),
+        SubText = Color3.fromRGB(160, 190, 220),
+        Hover = Color3.fromRGB(0, 200, 255),
+        HoverChange = 0.08,
+    },
 }
-
 local Library = {
 	Version = "1.5.0",
 
